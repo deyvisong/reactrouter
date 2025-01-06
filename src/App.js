@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Info from "./pages/Info";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/products/:id/info" element={<Info />} />
           {/* 4 - Dynamic routes */}
           <Route path="/products/:id" element={<Product />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
